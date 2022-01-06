@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+    vite:
+        init: true
+        image: leesanghyun/p-study:node
+        container_name: vite_runner
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./juri-study:/usr/app
+            - /usr/app/node_modules
+        command: /bin/sh -c "yarn dev"
+
+    interpreter:
+        init: true
+        image: leesanghyun/p-study:node
+        container_name: node_runner
+        tty: true
+        volumes:
+            - ./juri-study:/usr/app
+            - /usr/app/node_modules
+
