@@ -21,3 +21,15 @@ services:
             - ./juri-study:/usr/app
             - /usr/app/node_modules
 
+    deno:
+#         init: true
+        container_name: denoland
+        image: leesanghyun/p-study:deno
+
+
+        volumes:
+            - ./juri-study/src:/usr/app/src
+            - ./juri-study/index.html:/usr/app/index.html
+
+
+
