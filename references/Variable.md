@@ -14,6 +14,9 @@
 
 例えば**1番目のレジスター（メモリー）に入っている値に数10(二進数 1010)を足した結果を0番めのレジスターに入れなさい**だと
 
+[高水準言語](https://ja.wikipedia.org/wiki/%E9%AB%98%E6%B0%B4%E6%BA%96%E8%A8%80%E8%AA%9E "高水準言語")の[プログラム](https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0_(%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF)) "プログラム (コンピュータ)")の[ソースコード](https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89 "ソースコード")において、扱う[データ](https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%82%BF "データ")を読み書きする記憶域 (storage) のことであり、固有の[名前](https://ja.wikipedia.org/wiki/%E5%90%8D%E5%89%8D "名前")（[識別子](https://ja.wikipedia.org/wiki/%E8%AD%98%E5%88%A5%E5%AD%90 "識別子")）によって識別される
+
+
 ```haskell
 #2進数機械語
 001000 00001 00000 0000000000001010
