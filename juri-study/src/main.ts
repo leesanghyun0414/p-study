@@ -35,14 +35,57 @@ export class Calculator implements ArithmeticOperation {
 
 
     sum(a: number, b: number): number {
+        let result = a + b
+        return result
     }
 
+
     subtract(a: number, b: number): number {
+
+        return a - b
     }
 
     division(a: number, b: number): number {
+
+        let answer = a % b
+        return answer
     }
 
     multiplication(a: number, b: number): number {
+
+        return a * b
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function sum(num: number):number{
+    return num + num
+
+}
+
+const a = sum(10)
+console.log(a)
+
+
