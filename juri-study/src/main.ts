@@ -30,8 +30,7 @@ interface ArithmeticOperation {
 }
 
 export class Calculator implements ArithmeticOperation {
-    // TODO 四則演算を実装
-    // 引数 a, b を受け取って計算結果をreturnで返すこと
+
 
 
     sum(a: number, b: number): number {
