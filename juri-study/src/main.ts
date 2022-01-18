@@ -45,7 +45,7 @@ export class Calculator implements ArithmeticOperation {
     }
 
     division(a: number, b: number): number {
-        return a % b
+        return a / b
     }
 
     multiplication(a: number, b: number): number {
@@ -75,14 +75,5 @@ export class Calculator implements ArithmeticOperation {
 
 
 
-
-
-function sum(num: number):number{
-    return num + num
-
-}
-
-const a = sum(10)
-console.log(a)
 
 
