@@ -6,6 +6,22 @@
 // ------------------------------------------------------------------------------------------
 
 
+function additionNumberAllElement(arr:number[],additionNum:number){
+
+    arr.forEach((item,index,array) => {
+
+        array[index] = item + additionNum
+
+
+    })
+
+     return arr
+
+}
+
+const result = additionNumberAllElement([10,20,30],10);
+console.log(result);
+
 
 
 
