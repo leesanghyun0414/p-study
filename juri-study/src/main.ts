@@ -1,59 +1,26 @@
-interface ArithmeticOperation {
-
-    /**
-     * 足し算
-     * @param a
-     * @param b
-     */
-    sum(a: number, b: number): number
-
-    /**
-     * 引き算
-     * @param a
-     * @param b
-     */
-    subtract(a: number, b: number): number
-
-    /**
-     * 割り算
-     * @param a
-     * @param b
-     */
-    division(a: number, b: number): number
-
-    /**
-     * 掛け算
-     * @param a
-     * @param b
-     */
-    multiplication(a: number, b: number): number
-}
-
-export class Calculator implements ArithmeticOperation {
+// 以下の関数を宣言しなさい
+// ------------------------------------------------------------------------------------------
+// 関数名：　additionNumberAllElement
+// 引数名：　arry: number[], additionNum: number
+// 関数のビジネスロジック：数字の配列を受け取って各要素にaddtionNumの数値分加算した新しい配列をreturnする
+// ------------------------------------------------------------------------------------------
 
 
+function additionNumberAllElement(arr:number[],additionNum:number){
 
-    sum(a: number, b: number): number {
-        return a + b
-    }
+    arr.forEach((item,index,array) => {
+
+        array[index] = item + additionNum
 
 
-    subtract(a: number, b: number): number {
+    })
 
-        return a - b
-    }
-
-    division(a: number, b: number): number {
-        return a % b
-    }
-
-    multiplication(a: number, b: number): number {
-
-        return a * b
-    }
+     return arr
 
 }
 
+const result = additionNumberAllElement([10,20,30],10);
+console.log(result);
 
 
 
@@ -75,13 +42,5 @@ export class Calculator implements ArithmeticOperation {
 
 
 
-
-function sum(num: number):number{
-    return num + num
-
-}
-
-const a = sum(10)
-console.log(a)
 
 
